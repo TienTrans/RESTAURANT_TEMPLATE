@@ -1,0 +1,102 @@
+@media screen and (min-width: 992px) {
+    .toggle-menu,
+    .mobie-header {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .navbar,
+    .nav_list .nav_link {
+        display: none;
+    }
+    .header-top {
+        position: relative;
+    }
+    .logo img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-overlay {
+        z-index: 1;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #111114;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
+    }
+    .menu-drawer .ul {
+        margin-top: 32px;
+    }
+    .menu-drawer .ul .nav_link {
+        display: block;
+        padding: 14px 0;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .nav_link {
+        display: none;
+    }
+    /* section1 */
+    .section_1 .content {
+        display: block;
+    }
+    .section_1 .image-details {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    .section_1 .title-detail {
+        font-size: 3.4rem;
+    }
+    .section_1 .desc {
+        font-size: 1.4rem;
+    }
+    /* section_2 */
+    .section_2 .desc {
+        font-size: 1.4rem;
+    }
+    footer .content {
+        flex-wrap: wrap;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 30px;
+    }
+} /* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 30px;
+    }
+    /* section1 */
+    .section_1 .image-details {
+        width: 339px;
+        height: 366px;
+        overflow: hidden;
+    }
+}

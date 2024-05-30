@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant</title>
+
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- reponsive-->
+        <link rel="stylesheet" href="./assets/css/reponsive.css" />
+        <!-- lnik font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600&family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Sora:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- pc header -->
+        <header class="header">
+            <div class="content">
+                <div class="header-top">
+                    <nav class="navbar">
+                        <ul class="nav_list">
+                            <li class="nav_item">
+                                <a href="#!" class="nav_link">Trang chủ</a>
+                            </li>
+                            <li class="nav_item">
+                                <a
+                                    href="./danhsachsanpham.html"
+                                    class="nav_link"
+                                    >Menu</a
+                                >
+                            </li>
+                            <li class="nav_item">
+                                <a href="#!" class="nav_link">Blog</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#!" class="nav_link">Pages</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#!" class="nav_link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- tablet/mobie menu -->
+                    <div for="" class="toggle-menu">
+                        <img src="./assets/img/menu.png" alt="" />
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/img/Vector.svg" alt="logo" />
+                    </div>
+                    <a class="nav_link time-open">11:24 chúng tôi mở cửa</a>
+                    <a href="#! "
+                        ><box-icon
+                            name="cart"
+                            type="solid"
+                            color="#ffffff"
+                            class="icon"
+                        ></box-icon
+                    ></a>
+                </div>
+                <div class="header-bottom">
+                    <div class="right">
+                        <p class="title">Chào bạn mới!</p>
+                        <p class="title_large">
+                            Chúng tôi không nấu ăn, chúng tôi tạo ra cảm xúc của
+                            bạn!
+                        </p>
+                        <p class="title">
+                            Có bằng chứng cho thấy nấu ăn, giống như các hoạt
+                            động sáng tạo khác, có thể nâng cao hạnh phúc, lòng
+                            tự trọng và các biện pháp khác về sức khỏe tâm thần.
+                        </p>
+                        <p class="menu">
+                            <a href="#!" class="nav_link">Our menu</a>
+                        </p>
+                    </div>
+                    <div class="left">
+                        <img src="./assets/img/food-1.png" alt="" />
+                        <img
+                            src="./assets/img/food-2.png"
+                            alt=""
+                            class="header_img1"
+                        />
+                        <img
+                            src="./assets/img/food-3.png"
+                            alt=""
+                            class="header_img2"
+                        />
+                        <img
+                            src="./assets/img/food-4.png"
+                            alt=""
+                            class="header_img3"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- mobie-tablet header -->
+        <div class="mobie-header">
+            <!-- overlay -->
+            <div class="menu-overlay"></div>
+
+            <!-- menu content -->
+            <div class="menu-drawer">
+                <div>
+                    <img src="./assets/img/Vector.svg" alt="logo" />
+                </div>
+
+                <ul class="ul">
+                    <li>
+                        <a href="#!" class="nav_link">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="./danhsachsanpham.html" class="nav_link"
+                            >Menu</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#!" class="nav_link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav_link">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="nav_link">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="title-info">
+                    <div class="desc-number">06</div>
+                    <div class="desc_p">Nhà Hàng</div>
+                </div>
+                <div class="title-info">
+                    <div class="desc-number">68</div>
+                    <div class="desc_p">Thực Đơn Món Ăn Mới</div>
+                </div>
+                <div class="title-info">
+                    <div class="desc-number">36</div>
+                    <div class="desc_p">Năm kinh nghiệm</div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <!-- Most popular food -->
+            <section class="section_1">
+                <div class="content">
+                    <div class="top">
+                        <h1 class="title">Món phổ biến nhất</h1>
+                        <p class="desc">
+                            Danh sách các món ăn phổ biến nhất của Bangladesh
+                            bao gồm món chính, đồ uống và món tráng miệng mà bạn
+                            phải thử khi ở Bangladesh để có trải nghiệm đích
+                            thực.Check now!
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="food-list">
+                            <div class="food-item">
+                                <img
+                                    src="./assets/img/popular-food1.png"
+                                    alt=""
+                                    class="image-food"
+                                />
+                                <div class="box_top">
+                                    <h2 class="title_food">Mì Schezwan</h2>
+                                    <p class="title_food">$49</p>
+                                </div>
+                                <p class="desc">
+                                    Bánh mì bột chua nướng tươi với dầu ô liu và
+                                    lựu.
+                                </p>
+                                <div class="box-bottom">
+                                    <p class="order">Order Now</p>
+                                    <div class="stars">
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img
+                                    src="./assets/img/popular-food2.png"
+                                    alt=""
+                                    class="image-food"
+                                />
+                                <div class="box_top">
+                                    <h2 class="title_food">Mì Schezwan</h2>
+                                    <p class="title_food">$49</p>
+                                </div>
+                                <p class="desc">
+                                    Bánh mì bột chua nướng tươi với dầu ô liu và
+                                    lựu.
+                                </p>
+                                <div class="box-bottom">
+                                    <p class="order">Order Now</p>
+                                    <div class="stars">
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star2.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img
+                                    src="./assets/img/popular-food3.png"
+                                    alt=""
+                                    class="image-food"
+                                />
+                                <div class="box_top">
+                                    <h2 class="title_food">Mì Schezwan</h2>
+                                    <p class="title_food">$49</p>
+                                </div>
+                                <p class="desc">
+                                    Bánh mì bột chua nướng tươi với dầu ô liu và
+                                    lựu.
+                                </p>
+                                <div class="box-bottom">
+                                    <p class="order">Order Now</p>
+                                    <div class="stars">
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star1.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="./assets/img/star2.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- openning time -->
+            <section class="section_2">
+                <div class="content">
+                    <div class="contact_time">
+                        <div class="box-left">
+                            <h3 class="title">Tìm chúng tôi</h3>
+                            <div class="desc">
+                                Avenue Marina 34568 NY (U.S) +0123 456 7890
+                                hellouihut@gmail.com
+                            </div>
+                        </div>
+                        <div class="box-right">
+                            <span class="title">Openning Times</span>
+                            <div class="openning">
+                                <div class="day_open">
+                                    <p>Mon</p>
+                                    <p>Wed</p>
+                                    <p>Thu</p>
+                                    <p>Fr</p>
+                                    <p>Sat/Sun</p>
+                                </div>
+                                <div class="time_open">
+                                    <p>17:00 to 23:00</p>
+                                    <p>19:00 to 24:00</p>
+                                    <p>14:00 to 18:00</p>
+                                    <p>16:00 to 24:00</p>
+                                    <p>20:00 to 4:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Choose & Taste What You Like  -->
+            <section class="section_3">
+                <div class="content">
+                    <div class="top">
+                        <p class="desc">Menu của chúng tôi</p>
+                        <h2 class="title">Chọn Hương Vị Mà Bạn Thích</h2>
+                        <p class="desc">
+                            Danh sách các món ăn hàng đầu của Bangladesh bao gồm
+                            món chính, đồ uống và món tráng miệng mà bạn phải
+                            thử khi ở Bangladesh để có trải nghiệm đích thực..
+                            Check now!
+                        </p>
+                        <ul class="menu-list">
+                            <li class="menu-item">All</li>
+                            <li class="menu-item">Appetizer</li>
+                            <li class="menu-item">Soup</li>
+                            <li class="menu-item">Dessert</li>
+                            <li class="menu-item">Drinks</li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <div class="detail-menu">
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small1.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    Burger đậu Chawli và bạc hà
+                                </div>
+                                <div class="price">$11</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small5.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">Phi lê gà sống tỏi</div>
+                                <div class="price">$25</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small2.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    American Chopsuey, Jain Recipe
+                                </div>
+                                <div class="price">$16</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small6.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    Súp ngô đặc Makai Shorba
+                                </div>
+                                <div class="price">$14</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small3.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    Paneer cốm, Paneer nhanh chiên giòn
+                                </div>
+                                <div class="price">$15</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small7.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    Healthy Salmon Power Bowl
+                                </div>
+                                <div class="price">$09</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small4.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">Rau củ xào bơ</div>
+                                <div class="price">$23</div>
+                            </div>
+                            <div class="detail-item">
+                                <img
+                                    src="./assets/img/food-small8.png"
+                                    alt=""
+                                    class="image"
+                                />
+                                <div class="name-food">
+                                    Paneer N Cuộn Phô Mai
+                                </div>
+                                <div class="price">$10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_4">
+                <div class="content">
+                    <div class="top">
+                        <h2 class="title">Ghé thăm nhà hàng</h2>
+                        <p class="desc">
+                            Lựa chọn thực đơn theo phong cách đồng quê chất
+                            lượng, dịch vụ thân thiện và hiệu quả, kết hợp với
+                            giá trị đích thực đã giúp chúng tôi phục vụ tốt nhất
+                            các gia đình như gia đình của bạn trong hơn 28 năm
+                            qua.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="list-img">
+                            <img
+                                src="./assets/img/restaurant1.png"
+                                alt=""
+                                class="img-item"
+                            />
+                            <img
+                                src="./assets/img/restaurant2.png"
+                                alt=""
+                                class="img-item"
+                            />
+                            <img
+                                src="./assets/img/restaurant3.png"
+                                alt=""
+                                class="img-item"
+                            />
+                            <img
+                                src="./assets/img/restaurant4.png"
+                                alt=""
+                                class="img-item"
+                            />
+                            <img
+                                src="./assets/img/restaurant5.png"
+                                alt=""
+                                class="img-item"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_5">
+                <div class="content">
+                    <div class="left-content">
+                        <p class="book-now">Reserve! Book Now</p>
+                        <div class="container-small">
+                            <div class="set-time">
+                                <p class="title">Đặt ngày</p>
+                                <div class="date">
+                                    <div class="number">21</div>
+                                    <div>
+                                        <div class="month">Sep</div>
+                                        <img
+                                            src="./assets/img/arrow-dow.svg"
+                                            alt=""
+                                            class="arrow"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Guests">
+                                <p class="title">Guests</p>
+                                <div class="box">
+                                    <div class="number">2</div>
+                                    <div class="box-arrow">
+                                        <img
+                                            src="./assets/img/arrow-up.svg"
+                                            alt=""
+                                            class="arrow"
+                                        />
+                                        <img
+                                            src="./assets/img/arrow-dow.svg"
+                                            alt=""
+                                            class="arrow"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">Book now</div>
+                    </div>
+                    <div class="right-img"></div>
+                </div>
+            </section>
+            <section class="section_6">
+                <div class="content">
+                    <div class="top">
+                        <h2 class="title">Họ sẽ nấu ăn cho bạn</h2>
+                        <p class="desc">
+                            Thực khách của chúng tôi có thể tự nấu ăn hoặc ghé
+                            thăm tuyển chọn các nhà hàng trong khu vực. Họ sẽ
+                            nấu ăn cho bạn và đảm bảo rằng bạn luôn có một ngôi
+                            nhà xa nhà.
+                        </p>
+                    </div>
+                    <div class="chef-list">
+                        <div class="chef-item">
+                            <img src="./assets/img/chef-1.png" alt="" />
+                            <p class="name-chef">Jubed Ahmed</p>
+                            <p class="position">Chef</p>
+                        </div>
+                        <div class="chef-item">
+                            <img src="./assets/img/chef2.png" alt="" />
+                            <p class="name-chef">Delwar hussen</p>
+                            <p class="position">Assisten chef</p>
+                        </div>
+                        <div class="chef-item">
+                            <img src="./assets/img/chef3.png" alt="" />
+                            <p class="name-chef">Tajul Islam</p>
+                            <p class="position">Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_7">
+                <img src="./assets/img/self-services.png" alt="" />
+                <img src="./assets/img/best-food.png" alt="" />
+                <img src="./assets/img/fast-delivry.png" alt="" />
+            </section>
+        </main>
+        <footer>
+            <div class="content">
+                <div class="block-left">
+                    <img src="./assets/img/wowwrap.svg" alt="" />
+                    <p>Tải xuống ứng dụng WowWraps ngay hôm nay.</p>
+                    <div class="block-img">
+                        <img src="./assets/img/app-store.svg" alt="" />
+                        <img src="./assets/img/google-play.svg" alt="" />
+                    </div>
+                </div>
+                <div class="alike">
+                    <h3>Usefull Link</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Booking</li>
+                        <li>Menu</li>
+                    </ul>
+                </div>
+                <div class="alike">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Silk St, Barbican, London EC2Y 8DS, UK</li>
+                        <li>info@example.com</li>
+                        <li>800-123-45-678</li>
+                    </ul>
+                </div>
+                <div class="alike">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+                <div class="alike">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>Website by uihut.com</li>
+                        <li>©2022. All Rights Reserved</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="./assets/js/danhsachsanpham.js"></script> -->
+</html>

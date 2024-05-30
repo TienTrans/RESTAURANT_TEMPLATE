@@ -1,0 +1,96 @@
+@media screen and (min-width: 992px) {
+    .toggle-menu,
+    .mobie-header {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .navbar,
+    .nav_list .nav_link {
+        display: none;
+    }
+    .header-top {
+        position: relative;
+    }
+    .logo img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-overlay {
+        z-index: 1;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #111114;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
+    }
+    .menu-drawer .ul {
+        margin-top: 32px;
+    }
+    .menu-drawer .ul .nav_link {
+        display: block;
+        padding: 14px 0;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .time-open {
+        display: none;
+    }
+    .section_1 .container-big {
+        display: block;
+    }
+    .section_1 img,
+    .section-2 img {
+        display: block;
+        width: calc(100%);
+        margin: 0 auto;
+    }
+    .section_1 .title-small {
+        font-size: 3rem;
+        margin-top: 25px;
+    }
+    .section_1 .desc {
+        font-size: 1.4rem;
+    }
+    .content {
+        width: 1170px;
+        max-width: calc(100% - 36px);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    /* section2 */
+    .section-2 .blog-list {
+        flex-wrap: wrap;
+    }
+    .section-2 .title {
+        font-size: 3rem;
+    }
+    footer .content {
+        flex-wrap: wrap;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 30px;
+    }
+}

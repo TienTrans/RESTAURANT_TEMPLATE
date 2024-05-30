@@ -1,0 +1,78 @@
+@media screen and (min-width: 992px) {
+    .toggle-menu,
+    .mobie-header {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .navbar,
+    .nav_list .nav_link {
+        display: none;
+    }
+    .header-top {
+        position: relative;
+    }
+    .logo img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-overlay {
+        z-index: 1;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #111114;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
+    }
+    .menu-drawer .ul {
+        margin-top: 32px;
+    }
+    .menu-drawer .ul .nav_link {
+        display: block;
+        padding: 14px 0;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .time-open {
+        display: none;
+    }
+    .header .header-bottom {
+        display: block;
+    }
+    .header .header-bottom .left {
+        margin: 20px auto 0 auto;
+    }
+    footer .content {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 30px;
+    }
+    .section_1 .title {
+        font-size: 4rem;
+    }
+    .section_1 .food-item .image-food {
+        width: 339px;
+    }
+    .food-item .box-bottom {
+        margin-top: 20px;
+    }
+}

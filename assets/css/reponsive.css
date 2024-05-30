@@ -1,0 +1,199 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .toggle-menu,
+    .mobie-header {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .navbar,
+    .nav_list .nav_link {
+        display: none;
+    }
+    .header-top {
+        position: relative;
+    }
+    .logo img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-overlay {
+        z-index: 1;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #111114;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
+    }
+    .menu-drawer .ul {
+        margin-top: 32px;
+    }
+    .menu-drawer .ul .nav_link {
+        display: block;
+        padding: 14px 0;
+        font-size: 1.9rem;
+        font-weight: 500;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .time-open {
+        display: none;
+    }
+    .header .header-bottom {
+        display: block;
+    }
+    .header .header-bottom .left {
+        margin: 20px auto 0 auto;
+    }
+
+    /* section1 */
+    .section_1 .food-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .food-list .food-item {
+        margin-bottom: 24px;
+    }
+    .section_3 .detail-item .name-food {
+        font-size: 2rem;
+        width: 168px;
+    }
+    .section_3 .detail-item .price {
+        font-size: 2rem;
+    }
+    /* section4 */
+    .section_4 .bottom .list-img {
+        display: flex;
+        height: 260px;
+        width: 339px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    /* section5 */
+    .section_5 .content {
+        display: block;
+    }
+    .section_5 .content .left-content {
+        width: auto;
+    }
+    .section_5 .btn {
+        margin: 74px auto 0 auto;
+    }
+    .section_5 .right-img {
+        width: auto;
+        height: 228px;
+        background-image: url(../img/backImg-mobie.png);
+    }
+    /* section_6 */
+    .section_6 .chef-list {
+        flex-direction: column;
+    }
+    /* section_ 7 */
+    .section_7 {
+        display: block;
+        flex-wrap: wrap;
+    }
+    footer .content {
+        flex-wrap: wrap;
+    }
+    /* .section_7 img {
+        display: block;
+    } */
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 30px;
+    }
+    .header-bottom .left img:first-child {
+        width: 350px;
+    }
+    .header-bottom .title_large {
+        font-size: 36px;
+    }
+    .right .title {
+        font-size: 1.4rem;
+    }
+    .left {
+        width: auto;
+    }
+
+    .container {
+        height: 375px;
+    }
+    .container .content {
+        flex-direction: column;
+    }
+
+    /* section1 */
+    .section_1 .top {
+        width: auto;
+    }
+    .section_1 .top .title {
+        font-size: 3.4rem;
+    }
+    .section_1 .top .desc {
+        font-size: 1.4rem;
+    }
+    /* section2  */
+
+    .contact_time {
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .contact_time .box-left {
+        width: 339px;
+    }
+    .contact_time .box-right {
+        width: 339px;
+        height: 282px;
+    }
+    /* section3 */
+    .section_3 .top .title {
+        font-size: 3.4rem;
+    }
+    .section_3 .top .desc {
+        font-size: 1.4rem;
+    }
+    .section_3 .menu-list {
+        flex-wrap: wrap;
+    }
+    .section_3 .menu-item {
+        margin-left: 0;
+        font-size: 2.4rem;
+    }
+    .section_3 .menu-item:nth-child(2),
+    .section_3 .menu-item:nth-child(3),
+    .section_3 .menu-item:nth-child(5) {
+        margin-left: 58px;
+    }
+    .section_3 .menu-item:nth-child(4),
+    .section_3 .menu-item:nth-child(5) {
+        margin-top: 26px;
+    }
+    .section_3 .detail-menu {
+        display: block;
+    }
+    .section_3 .detail-item {
+        margin-bottom: 7px;
+    }
+}
